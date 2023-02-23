@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header
+        class="flex justify-between m-9  bg-gradient-to-r from-[#e2e8f0]  to-[#f1f5f9] p-7 px-10  text-4xl font-semibold">
+        <h1><span class="font-bold text-6xl">Interactive</span> <br> Geometry Genius</h1>
+        <button id="blog" class="bg-sky-500/100 rounded-lg px-8 ">Blog</button>
+    </header>
+    <section>
+        <div class="text-center grid grid-cols-4 grid-rows-2 gap-4 p-10 items-center">
+            <div id="triangle" class=" shadow-lg shadow-gray-500/40 rounded-lg p-5">
+                <img class="mx-auto w-44" src="triangle.png" alt="">
+                <h1> Triangle</h1>
+                <p>Area(A) = o.5 <img class="w-3 mx-auto inline" src="cancel.png
+                    " alt=""> <span id="b">b</span> <img class="w-3 mx-auto inline" src="cancel.png
+                    " alt=""> <span id="h">h</span> </p>
+                <div>
+                    <input id="triangle-input" class="border-solid border-2 border-gray-600 rounded pl-3" type="text"
+                        placeholder="b">cm
+                    <input id="triangle-input2" class="border-solid border-2 border-gray-600 rounded pl-3 my-2"
+                        type="text" placeholder="h">cm
+                </div>
+                <br>
+                <button class="rounded bg-sky-500/100 px-8 ">Calculate</button>
+            </div>
+
+
+            <div id="rectangle-btn" class=" shadow-lg shadow-gray-500/40 rounded-lg p-5">
+                <img class="mx-auto w-44" src="rectangle.png" alt="">
+                <h1> Rectangle</h1>
+                <p>Area(A) = <span id="id-w">w</span> <img class="w-3 mx-auto inline" src="cancel.png
+                    " alt=""> <span id="id-l">l</span></p>
+                <div>
+                    <input id="w" class="border-solid border-2 border-gray-600 rounded pl-3 my-2" type="text"
+                        placeholder="W">cm
+                    <input id="l" class="border-solid border-2 border-gray-600 rounded pl-3" type="text"
+                        placeholder="l">cm
+                </div>
+                <br>
+                <br>
+                <button class="bg-sky-500/100 rounded px-8 ">Calculate</button>
+            </div>
+            <div id="parallelogram" class=" shadow-lg shadow-gray-500/40 rounded-lg p-5">
+                <img class="mx-auto w-44" src="parallelogram.png" alt="">
+                <h1> Parallelogram</h1>
+                <p>Area(A) =<span id="id-b"> b</span> <img class="w-3 mx-auto inline" src="cancel.png
+                    " alt=""> <span id="id-h">h</span></p>
+              
+                <br>
+                <div>
+                    <input id="b-2" class="border-solid border-2 border-gray-600 rounded pl-3 my-2" type="text"
+                        placeholder="b">cm
+                    <input id="h-2" class="border-solid border-2 border-gray-600 rounded pl-3" type="text"
+                        placeholder="h">cm
+                </div>
+                <br>
+                <button id="tectangle-btn" class="bg-sky-500/100 rounded px-8 ">Calculate</button>
+            </div>
+
+
+
+            <div class="border-2 solid  p-5 rounded
+            ">
+                <h1 class="mb-5"><u>Area Calculation</u> </h1>
+                <div class="flex justify-between mb-3">
+                    <h1>1. Triangle <span id="tri">12 </span>cm<sup>2</sup></h1>
+                    <button class="bg-sky-500/100 rounded px-8 ">Convert to m2</button>
+                </div>
+
+
+                <div class="flex justify-between mb-3">
+                    <h1>2. Rectangle <span id="rect">12 </span> cm <sup>2</sup></h1>
+                    <button class="bg-sky-500/100 rounded px-8 ">Convert to m2</button>
+                </div>
+
+
+                <div class="flex justify-between mb-3">
+                    <h1>3. Parallelogram <span id="par">12 </span>cm <sup>2</sup></h1>
+                    <button class="bg-sky-500/100 rounded px-8 ">Convert to m2</button>
+                </div>
+
+
+                <div class="flex justify-between mb-3">
+                    <h1>4. Rhombus <span id="rho">12 </span>cm <sup>2</sup></h1>
+                    <button class="bg-sky-500/100 rounded px-8 ">Convert to m2</button>
+                </div>
+
+
+                <div class="flex justify-between mb-3">
+                    <h1>5. Pentagon <span id="pen">12 </span>cm <sup>2</sup></h1>
+                    <button class="bg-sky-500/100 rounded px-8 ">Convert to m2</button>
+                </div>
+                <div class="flex justify-between mb-3">
+                    <h1>6. Ellipse <span id="elli">12 </span>cm <sup>2</sup></h1>
+                    <button class="bg-sky-500/100 rounded px-8 ">Convert to m2</button>
+                </div>
+
+
+            
+            </div>
+
+
+            <div id="rhombus" class=" shadow-lg shadow-gray-500/40 rounded-lg p-5">
+                <img class="mx-auto w-44" src="rhombus.png" alt="">
+                <h1> Rhombus</h1>
+                <p>Area(A) = o.5 <img class="w-3 mx-auto inline" src="cancel.png
+                " alt=""><span id="id-d"> d <sub>1</sub></span> <img class="w-3 mx-auto inline" src="cancel.png
+                " alt=""> <span id="id-d1">d <sub>2</sub></p></span>
+               
+                <div>
+                    <input id="d-1" class="border-solid border-2 border-gray-600 rounded pl-3 my-2" type="text"
+                        placeholder="cm">d<sub>1</sub>
+                    <input id="d-2" class="border-solid border-2 border-gray-600 rounded pl-3" type="text"
+                        placeholder="cm">d<sub>2</sub>
+                </div>
+                <br>
+                <button class="bg-sky-500/100 rounded px-8 ">Calculate</button>
+            </div>
+
+
+            <div id="pantagon" class=" shadow-lg shadow-gray-500/40 rounded-lg p-5">
+                <img class="mx-auto w-36" src="pentagon.png" alt="">
+                <h1> pentagon</h1>
+                <p>Area(A) = o.5 <img class="w-3 mx-auto inline" src="cancel.png
+                " alt=""> <span id="id-p">p</span> <img class="w-3 mx-auto inline" src="cancel.png
+                " alt=""><span id="id-k">b</span></p>
+              
+                <div>
+                    <input id="p" class="border-solid border-2 border-gray-600 rounded pl-3 my-2" type="text"
+                        placeholder="p">cm
+                    <input id="n" class="border-solid border-2 border-gray-600 rounded pl-3" type="text"
+                        placeholder="b">cm
+                </div>
+                <br>
+                <button class="bg-sky-500/100 rounded px-8 ">Calculate</button>
+            </div>
+
+
+            <div id="ellipse" class=" shadow-lg shadow-gray-500/40 rounded-lg p-5 ">
+                <img class="mx-auto w-44" src="ellipse.png" alt="">
+                <h1> Ellipse</h1>
+                <p>Area(A) = <img class="w-5 inline" src="pi.png" alt="">ab</p>
+              
+                <br>
+                <div>
+                    <input id="a-1" class="border-solid border-2 border-gray-600 rounded pl-3 my-2" type="text"
+                        placeholder="a"> cm
+                    <input id="b-1" class="border-solid border-2 border-gray-600 rounded pl-3" type="text"
+                        placeholder="b"> cm
+                </div>
+                <br>
+                <button class="bg-sky-500/100 rounded px-8 ">Calculate</button>
+            </div>
+
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
